@@ -1,12 +1,9 @@
 import Button from "@/components/common/Button";
+import { PageRouteProps } from "@/interface";
 import { useRouter } from "next/router";
 
-interface PageRouteProps {
-  pageRoute: string
-}
-
 export default function Home() {
-  const router = useRouter();"
+  const router = useRouter();
 
   // Imeperative routing with useRouter
   const routeToNextPage  = ({ pageRoute }: PageRouteProps) => {
